@@ -1,28 +1,50 @@
 'use client';
+
 import React from 'react';
 import Link from 'next/link';
-import NavUI from './nav';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
-return (
-    <header className = "flex items-center justify-between h-24 px-6 bg-white shadow ">
-        <div className = "flex items-center space-x-4">
-            <Image
-                src = "/aitestamford.png"
-                alt = "AITE Logo"
-                width = {200}
-                height = {200} 
-            / >
-            <h1 className = "text-2xl font-bold"> Academy of Information Technology & Engineering </h1>
+  return (
+    <header className="bg-white shadow-sm">
+      <div className="flex items-center justify-between h-28 px-10">
+
+        {/* Logo + Title */}
+        <div className="flex items-center space-x-6">
+          <Image
+            src="/aitestamford.png"
+            alt="AITE Logo"
+            width={95}
+            height={95}
+            className="object-contain"
+          />
+
+          <div className="leading-tight">
+            <h1 className="text-4xl font-serif font-bold text-gray-900">
+              Academy of Information Technology
+            </h1>
+            <p className="text-lg tracking-wide text-blue-700 font-medium">
+              & Engineering
+            </p>
+          </div>
         </div>
-        <nav className = "flex space-x-6 text-base font-medium">
-            <a href= "/ " className = "hover:text-blue-600">Home</a> 
-            <a href= "/about " className = "hover:text-blue-600">About</a>
-            <a href= "#" className = "hover:text-blue-600">Contact Us</a>
+
+        {/* Navigation */}
+        <nav className="flex space-x-10 text-lg font-semibold text-gray-700">
+          <Link href="/" className="hover:text-blue-700 transition">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-blue-700 transition">
+            About
+          </Link>
+          <Link href="#" className="hover:text-blue-700 transition">
+            Contact Us
+          </Link>
         </nav>
-        <NavUI />
+
+      </div>
     </header>
-    );
+  );
 };
+
 export default Header;

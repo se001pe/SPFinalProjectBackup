@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 export default async function CourseSeqPage ( { params } ) {
     const {pathway} = await params;

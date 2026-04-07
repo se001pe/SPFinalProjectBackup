@@ -1,19 +1,62 @@
-'use client';
 import ReactFC from 'react';
 import AccordionUI from "@/layout/ui/accordion";
 
-const CS: React.FC = () => {
-return (
-    <div className = "text-center">
-        <div className = "text-center text-xl p-6">
-            Computer Science Pathway
+export default async function CourseDescriptions( {params } ) {
+    const {pathway} = await params;
+
+    if (pathway === "computer-science") {
+        return (
+        <div className = "text-center">
+                <div className = "text-center text-xl p-6">
+                    Computer Science Pathway Courses
+                </div>
+            <div>
+                <AccordionUI 
+                    title="Introduction to Computer Science/CS Essentials"
+                    content = "Introduction to Computer Science/CS Essentials is an introductory-level course for students brand new to programming and computer science. In this course, you will learn problem-solving strategies, software design, and the foundations of computer science. You'll do so using the Project STEM programming environment and Project Lead the Way CS Essentials curriculum. There are no prerequisites for this course, although you should have basic familiarity with how to operate a computer and use applications. It's also recommended that you have familiarity with basic algebra principles before starting this course."/>
+                <AccordionUI
+                    title="AP Computer Science Principles"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+                <AccordionUI
+                    title="AP Computer Science A"
+                    content="AP Computer Science A is an introductory college-level computer science course. Students cultivate their understanding of coding through analyzing, writing, and testing code as they explore concepts like modularity, variables, and control structures." />
+                <AccordionUI
+                    title="PLTW Cybersecurity"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+            </div>
+
         </div>
-        <div>
-            <AccordionUI 
-            title="Description"
-            content = "The Computer Science Pathway at AITE consists of four courses that teach students how to code from the ground up. The pathway consists of a blend of Project Lead the Way. Runestone and Amazon Future Engineer/Project Stem courses. Primary programming languages used are Python and Java. Students will also have the opportunity to take electives courses which will expose them to C++ and Roblox."/>
+        );
+    };
+
+    if (pathway === "engineering") {
+        return (
+        <div className = "text-center">
+                <div className = "text-center text-xl p-6">
+                    Engineering Pathway Courses
+                </div>
+            <div>
+                <AccordionUI 
+                    title="PLTW Engineering Essentials"
+                    content = "Introduction to Computer Science/CS Essentials is an introductory-level course for students brand new to programming and computer science. In this course, you will learn problem-solving strategies, software design, and the foundations of computer science. You'll do so using the Project STEM programming environment and Project Lead the Way CS Essentials curriculum. There are no prerequisites for this course, although you should have basic familiarity with how to operate a computer and use applications. It's also recommended that you have familiarity with basic algebra principles before starting this course."/>
+                <AccordionUI
+                    title="PLTW Principles of Engineering"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+                <AccordionUI
+                    title="PLTW Civil Engineering & Architecture"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+                <AccordionUI
+                    title="PLTW Digital Electronics"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+                <AccordionUI
+                    title="PLTW Capstone"
+                    content="In Computer Science Principles, students develop the in-demand computer science skills critical to thrive in any of today's and tomorrows careers. The course promotes computational thinking and coding fundamentals and introduces computational tools that foster creativity. It aims to build students' awareness of the tremendous demand for computer scientists and those who have computational thinking skills, and engages students to consider issues raised by the impact of computing on society. Each unit also focuses on one or more computer science-specific career paths. Computer Science Principles provides students with a broad exposure to the many aspects of computer science while encouraging creativity, socially responsible choices, and ethical behavior. It inspires algorithmic and computational thinking, helping students see themselves in a career path they might not have initially chosen." />
+            </div>
+
         </div>
-    </div>
-    )
+        );
+    };
+    
 };
-export default CS;
+
+
