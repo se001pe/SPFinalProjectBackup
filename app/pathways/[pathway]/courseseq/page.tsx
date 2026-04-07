@@ -15,4 +15,30 @@ export default async function CourseSeqPage ( { params } ) {
             </div>
         );
     };
+
+  if (pathway === "biomed") {
+        return (
+            <div className = "w-full text-center">
+                <Image
+                src = "/courseseqbs.png"
+                alt = "Biomedical Course Sequence"
+                width = {800}
+                height = {1200}
+            />
+            </div>
+        );
+    };
+
+    if (pathway === "engineering") {
+        return (
+            <div className = "w-full text-center">
+                <Image
+                src = "/courseseqeng.png"
+                alt = "Engineering Course Sequence"
+                width = {800}
+                height = {1200}
+            />
+            </div>
+        );
+    };
 };

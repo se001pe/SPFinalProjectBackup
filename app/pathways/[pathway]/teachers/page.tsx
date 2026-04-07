@@ -32,4 +32,22 @@ if (pathway === "computer-science") {
     </div>
     );
   };
+
+  if (pathway === "engineering") {
+    return (
+    <div className = "flex flex-col w-full p-5">
+      <div className = "text-center text-xl">Engineering Teachers</div>
+         <ul className = "text-base p-5">
+            <p className="font-bold"><li>Ms. Paige Ridley - Pathway Lead</li></p>
+            <li>Courses Taught: Engineering Essentials, PLTW Civil Engineering & Architecture, PLTW Capstone</li>
+            <p className="font-bold"><li>Ms. Pradnya Nandanwar</li></p>
+            <li>Courses Taught: PLTW Principles of Engineering</li>
+            <p className="font-bold"><li>Mr. Sean Peterson</li></p>
+            <li>Courses Taught: PLTW Introduction to Engineering Design, Digital Electronics</li>
+            <p className="font-bold"><li>Mr. Vin Urbanowski</li></p>
+            <li>Courses Taught: Aerospace Engineering, Tango Flight</li>
+        </ul>
+    </div>
+    );
+  };
 };
