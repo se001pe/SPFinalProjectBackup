@@ -1,0 +1,35 @@
+export default async function TeachersPage ( { params }) {
+const { pathway } = await params;
+
+if (pathway === "biomed") {
+    return (
+    <div className = "flex flex-col w-full p-5">
+      <div className = "text-center text-xl">Biomedical Teachers</div>
+         <ul className = "text-base p-5">
+            <p className = "font-bold"><li>Mrs. Danielle Weber - Pathway Lead</li></p>
+            <li>Courses Taught: Human Body Systems, Medical Interventions, PLTW Capstone</li>
+            <p className = "font-bold"><li>Mr. Patrick Scollan</li></p>
+            <li>Courses Taught: Principles of Biomedical Science</li>
+            <p className = "font-bold"><li>Ms. Lauren Welsh</li></p>
+            <li>Student Teacher</li>
+        </ul>
+    </div>
+    );
+  };
+
+if (pathway === "computer-science") {
+    return (
+    <div className = "flex flex-col w-full p-5">
+      <div className = "text-center text-xl">Computer Science Teachers</div>
+         <ul className = "text-base p-5">
+            <p className="font-bold"><li>Mr. Sean Peterson - Pathway Lead</li></p>
+            <li>Courses Taught: Introduction to Computer Science, Digtial Electronics, AP Computer Science A</li>
+            <p className="font-bold"><li>Ms. Florina Merturi</li></p>
+            <li>Courses Taught: Intro to Game Design/Game Design & Development, PLTW Cybersecurity</li>
+            <p className="font-bold"><li>Mr. Darin Tomaszewski</li></p>
+            <li>Courses Taught: Robotics</li>
+        </ul>
+    </div>
+    );
+  };
+};

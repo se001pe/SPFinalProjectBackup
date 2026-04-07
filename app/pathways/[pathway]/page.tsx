@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default async function OverviewPage( { params }) {
+export default async function OverviewPage( { params } ) {
   const { pathway } = await params;
 
   if (pathway === "computer-science") {

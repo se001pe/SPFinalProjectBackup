@@ -16,7 +16,7 @@ export default async function PathwayLayout({ children, params }: any) {
         <nav className="space-y-2">
           <Link className="block" href={`/pathways/${pathway}`}>Overview</Link>
           <Link className="block" href={`/pathways/${pathway}/courseseq`}>Course Sequence</Link>
-          <Link className="block"  href={`/pathways/${pathway}/coursedesc`}>Course Descriptions</Link>
+          <Link className="block" href={`/pathways/${pathway}/coursedesc`}>Course Descriptions</Link>
           <Link className="block" href={`/pathways/${pathway}/teachers`}>Teachers</Link>
         </nav>
       </aside>
