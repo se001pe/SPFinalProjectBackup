@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
 return (
     <div>
-        <div className = "flex flex-row w-full text-center">
+        <div className = "flex flex-row w-full text-center p-10">
             <HomeHeader />
         </div>
         <div className = "flex flex-row w-full align-center px-50 gap-x-20">

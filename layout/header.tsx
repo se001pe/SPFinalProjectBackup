@@ -27,17 +27,23 @@ const Header: React.FC = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="flex space-x-5 text-lg font-semibold text-black-500">
-          <Link href="/" className="hover:text-blue-700 transition">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-blue-700 transition">
-            About
-          </Link>
-          <Link href="/contact" className="hover:text-blue-700 transition">
-            Contact Us
-          </Link>
-        </nav>
+          <ul className = "flex flex-row gap-4 p-30">
+            <li>
+              <Link href = "/ " className="hover:text-blue-700 transition">Home</Link>
+            </li>
+            <li>
+              <Link href="/about " className="hover:text-blue-700 transition">About</Link>
+            </li>
+            <li>
+              <Link href="/contact " className="hover:text-blue-700 transition">Contact</Link>
+            </li>
+            <li>
+              <Link href="/apply " className="hover:text-blue-700 transition">Apply</Link>
+            </li>
+            <li>
+              <Link href="/photos " className="hover:text-blue-700 transition">Photos</Link>
+            </li>
+         </ul>
 
       </div>
     </header>
