@@ -6,6 +6,7 @@ import WildcardKeyframes from "@/components/motion";
 import HTMLContent from '@/components/count';
 import { MotionConfig } from 'framer-motion';
 import Link from 'next/link';
+import Image from "next/image";
 
 const labels = {
     biomed: "Biomedical Science",
@@ -18,10 +19,10 @@ const Home: React.FC = () => {
 
 return (
     <div>
-        <div className = "flex flex-row w-full text-center p-10">
+        <div className = "flex flex-row w-full pb-70">
             <HomeHeader />
         </div>
-        <div className = "flex flex-row w-full align-center px-50 gap-x-20">
+        <div className = "flex flex-row w-full align-center pl-70 gap-x-20">
             <Link href="pathways/biomed">
                 <WildcardKeyframes>
                     <motion.p
@@ -31,6 +32,12 @@ return (
                     >
                         {labels.biomed}
                     </motion.p>
+                    <Image 
+                        src = "/biomedicon.png"
+                        alt = "PLTW Biomedical"
+                        width = {100}
+                        height={100}
+                    />
                 </WildcardKeyframes>
             </Link>
                 <Link href="pathways/computer-science">
@@ -42,17 +49,25 @@ return (
                     >
                         {labels["computer-science"]}
                     </motion.p>
+                    <Image 
+                        src = "/csicon.png"
+                        alt = "PLTW Biomedical"
+                        width = {100}
+                        height={100}
+                    />
                 </WildcardKeyframes>
              </Link>
-            <WildcardKeyframes>
-                <motion.p
-                    style={{ color: "gold",fontSize: 18,textAlign:"center"}}
-                    whileHover={{y: [-5, 0, -5]}}
-                    transition={{duration: 0.6, repeat:Infinity}}
-                >
-                    {labels["digital-media"]}
-                </motion.p>
+                <Link href="pathways/digital-media">
+                    <WildcardKeyframes>
+                    <motion.p
+                        style={{ color: "gold",fontSize: 18,textAlign:"center"}}
+                        whileHover={{y: [-5, 0, -5]}}
+                        transition={{duration: 0.6, repeat:Infinity}}
+                    >
+                        {labels["digital-media"]}
+                    </motion.p>
                 </WildcardKeyframes>
+            </Link>
             <Link href = "pathways/engineering">
                 <WildcardKeyframes>
                     <motion.p
@@ -62,6 +77,12 @@ return (
                     >
                         {labels.engineering}
                     </motion.p>
+                    <Image 
+                        src = "/engicon.png"
+                        alt = "PLTW Engineering"
+                        width = {100}
+                        height={100}
+                    />
                  </WildcardKeyframes>
                 </Link>
              </div>

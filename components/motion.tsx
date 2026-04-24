@@ -41,7 +41,7 @@ export default function  WildcardKeyframes( { children }: { children: React.Reac
 
 const box = {
     width: 150,
-    height: 150,
-    backgroundColor: "#071516",
+    height: 75,
+    backgroundColor: "#19071b",
     borderRadius: 5,
 }

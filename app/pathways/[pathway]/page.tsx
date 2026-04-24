@@ -29,7 +29,13 @@ export default async function OverviewPage( { params } ) {
      </div>
     )
   }
-  <div className = "p-10">
-            <Link href = "/ ">Go back to Homepage</Link>
-  </div>
+
+  if (pathway === "digital-media") {
+    return (
+      <div className = "flex flex-col w-full">
+          <div className = "flex flex-row w-full text-xl text-center">Overview</div>
+            <div className = "text-base">The Digital Media and Design Pathway exists.</div>
+      </div>
+    )
+  }  
 };

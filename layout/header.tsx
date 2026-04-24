@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           />
 
           <div className="leading-tight">
-            <h1 className="text-3xl font-serif font-bold text-gray-900">
+            <h1 className="text-3xl font-serif font-bold text-center text-gray-900">
               Academy of Information Technology & Engineering
             </h1>            
           </div>
